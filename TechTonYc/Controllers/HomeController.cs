@@ -32,7 +32,7 @@ namespace TechTonYc.Controllers
         public IActionResult Maxim()
         {
             ViewData["Message"] = "Your desired Layout.";
-
+            @ViewData["Title"] = "Welcome";
             return View();
         }
 

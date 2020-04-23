@@ -26,6 +26,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -42,7 +47,12 @@ h1, h2, h3, h4, h5, h6 {
   transition: display 0.5s ease-in-out;
   z-index: 99999;
 }
-
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
 .back-to-top i {
   font-size: 24px;
   position: absolute;
@@ -337,11 +347,12 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: calc(100vh - 72px);
-  background: url("../img/hero-bg.jpg") center center;
+  background: url("../images/hero-bg.jpg") center center;
   background-size: cover;
   position: relative;
   margin-top: 72px;
   padding: 0;
+  
 }
 
 #hero:before {
@@ -355,7 +366,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .container {
-  z-index: 2;
+    z-index: 2;
+    text-align: left;
 }
 
 #hero h1 {
@@ -442,6 +454,7 @@ section {
 }
 
 .section-title p {
+  
   margin-bottom: 0;
 }
 
